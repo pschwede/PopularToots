@@ -1,0 +1,5 @@
+APPNAME = 'highscore'
+APIBASE = 'https://qoto.org'
+SECRETFILE = APPNAME+'.secret'
+USERSECRET = APPNAME+'.user.secret'
+LASTPOST = APPNAME+'.last'
