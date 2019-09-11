@@ -20,7 +20,7 @@ python3 top-toot.py \
 	match($0, /@[^/]+/);
 	print "#Rising! "substr($0, RSTART, RLENGTH)", your toot is currently pretty popular: "$2""
 }' \
-| tee "$LAST" \
+> "$LAST"
 
 diff -s "$LAST" "$LAST.last" || python3 toot.py <"$LAST"
 
