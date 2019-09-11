@@ -12,5 +12,5 @@ Add `run-daily.sh` and `run-hourly.sh` to your `crontab -e`, for example:
 
 ```
 0	22	*	*	*	/your/path_to/populartoots/run-daily.sh
-0	0-23/4	*	*	*	/your/path_to/populartoots/run-hourly.sh
+@hourly					/your/path_to/populartoots/run-hourly.sh
 ```
