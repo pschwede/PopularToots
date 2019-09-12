@@ -14,7 +14,7 @@ if [ -e "$LAST" ]; then
 	mv "$LAST" "$LAST.last"
 fi
 
-./top-post.py \
+./top-toot.py \
 | head -1 \
 | awk -F$'\t' '{
 	match($0, /@[^/]+/);
