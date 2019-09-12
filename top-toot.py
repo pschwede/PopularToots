@@ -103,7 +103,7 @@ def get_local_timeline_favs_mastodon(
 
     print("Total number of toots analyzed: %d" % req_count, file=stderr)
     print("Total seconds required: %d" % (
-        datetime.now(tz=GMT1()) - START).total_seconds())
+        datetime.now(tz=GMT1()) - START).total_seconds(), file=stderr)
     return (highscore, highgain)
 
 
