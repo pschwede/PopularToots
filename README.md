@@ -8,7 +8,7 @@ Run `python3 -m venv .env` to create a local, independent environment that will 
 
 Run to install all requirements:
 ```bash
-source .env/activate
+source .env/bin/activate
 pip install -r requirements.txt
 deactivate
 ```
