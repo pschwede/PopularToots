@@ -4,7 +4,14 @@ A bot that toots about the most retweeted and most faved local toot.
 
 ## Setup
 
-Run `python3 -m venv .env` to create a local environment that will be activated by `run*.sh`.
+Run `python3 -m venv .env` to create a local, independent environment that will later be activated by `run-daily.sh`, etc.
+
+Run to install all requirements:
+```bash
+source .env/activate
+pip install -r requirements.txt
+deactivate
+```
 
 Run `create.py` to setup the account that will act as this bot.
 
