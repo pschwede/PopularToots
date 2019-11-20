@@ -17,8 +17,8 @@ fi
 ./top-toot.py \
 | head -1 \
 | awk -F$'\t' '{
-	match($0, /@[^/]+/);
-	print "#DailyHighscore! "substr($0, RSTART, RLENGTH)", the winner of all local toots today is: "$2" Good night!"
+	match($2, /@[^\/]+/);
+	print "#DailyHighscore! "substr($2, RSTART, RLENGTH)", the winner of all local toots today is: "$2" Good night!"
 }' \
 > "$LAST"
 

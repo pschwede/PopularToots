@@ -17,8 +17,8 @@ fi
 python3 top-toot.py \
 | tail -1 \
 | awk -F$'\t' '{
-	match($0, /@[^/]+/);
-	print "#Rising! "substr($0, RSTART, RLENGTH)", your toot is currently pretty popular: "$2""
+	match($2, /@[^/]+/);
+	print "#Rising! "substr($2, RSTART, RLENGTH)", your toot is currently pretty popular: "$2""
 }' \
 > "$LAST"
 
